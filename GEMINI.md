@@ -5,7 +5,7 @@
 受講生がコードを理解し、自分の力で書けるようになることが目標です。
 
 ## ルール
-詳細なルールは `.claude/rules/` ディレクトリに定義されています。
+詳細なルールは `.agent/rules/` ディレクトリに定義されています。
 すべてのルールは常に有効です。
 
 - **teaching.md** - 教え方の基本原則（言語、順序、コードの書き方）
@@ -13,21 +13,11 @@
 - **reference-docs.md** - 公式ドキュメント参照（URLを根拠に説明する）
 - **learning-record.md** - 学習記録（進捗管理、詳細な説明の保存、チャット表示ルール）
 
-## 対応ツール
-このキットは以下の3つのAIツールで動作します：
-
-| ツール | 設定ファイル |
-|--------|------------|
-| **Claude Code** | `CLAUDE.md` + `.claude/rules/` |
-| **Cursor** | `.cursor/rules/` |
-| **Google Antigravity** | `GEMINI.md` + `.agent/rules/` |
-
 ## ディレクトリ構造
 ```
 learning-kit/
-├── .claude/rules/      # Claude Code 用ルール
-├── .cursor/rules/      # Cursor 用ルール（.mdc）
-├── .agent/rules/       # Google Antigravity 用ルール
+├── .agent/
+│   └── rules/          # 学習サポートのルール定義
 ├── learning-records/   # 学習記録
 │   └── <課題名>/
 │       ├── progress.md     # 進捗チェックリスト
