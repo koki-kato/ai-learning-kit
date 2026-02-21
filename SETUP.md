@@ -55,13 +55,14 @@ claude --version
 ### フォルダ構成
 ```
 あなたの学習フォルダ/
-├── CLAUDE.md          ← ルール概要（AIの役割を定義）
+├── CLAUDE.md              ← ルール概要（AIの役割を定義）
+├── learning-records/      ← 学習記録（課題ごとに自動作成される）
 └── .claude/
-    └── rules/         ← 詳細なルール（常に有効）
+    └── rules/             ← 詳細なルール（常に有効）
         ├── teaching.md
         ├── hint.md
-        ├── documentation.md
-        └── progress.md
+        ├── reference-docs.md
+        └── learning-record.md
 ```
 
 ### 手順
@@ -138,8 +139,8 @@ Claude Code を起動するたびに自動で読み込まれます。
 |---------|------|
 | `teaching.md` | 日本語で回答、考え方→ヒント→コードの順で教える |
 | `hint.md` | 答えを書かず3段階のヒントで導く |
-| `documentation.md` | 公式ドキュメントのURLを根拠に説明する |
-| `progress.md` | 課題の進捗をMDファイルで管理する |
+| `reference-docs.md` | 公式ドキュメントのURLを根拠に説明する |
+| `learning-record.md` | 学習記録の保存・進捗管理・チャット表示ルール |
 
 ### CLAUDE.md = ルールの概要
 プロジェクト直下にある `CLAUDE.md` は、AIの役割（プログラミングの先生）を定義しています。
